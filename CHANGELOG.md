@@ -1,10 +1,5 @@
 # Changelog
 
-## 1.3.0 — 2026-10-30
-
-- Download a plain-text speaker script with slide numbers, titles and notes.
-- Browser check grows to 12 and verifies the download.
-
 ## 1.0.0 — 2026-10-30
 
 - First public release of Pressroom, a local-first deck studio for Windows.
