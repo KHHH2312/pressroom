@@ -1,10 +1,5 @@
 # Changelog
 
-## 1.6.0 — 2026-10-30
-
-- Security: override transitive image-size to 2.0.4, fixing two high-severity DoS advisories.
-- Probe PNG embedded in the suite; npm audit reports zero vulnerabilities.
-
 ## 1.0.0 — 2026-10-30
 
 - First public release of Pressroom, a local-first deck studio for Windows.
