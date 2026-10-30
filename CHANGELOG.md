@@ -1,10 +1,5 @@
 # Changelog
 
-## 1.5.0 — 2026-10-30
-
-- Print / PDF: every slide on its own 13.333 x 7.5 in landscape page.
-- Browser check grows to 14.
-
 ## 1.0.0 — 2026-10-30
 
 - First public release of Pressroom, a local-first deck studio for Windows.
