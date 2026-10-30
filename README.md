@@ -18,7 +18,7 @@ shapes, charts, images and speaker notes, not pictures of slides.
 
 </div>
 
-> **New — 1.9** — filter proofs by title in the rail.
+> **New — 1.11.0** — find & replace across every slide, and a rail search that reads body, bullets and speaker notes.
 > [Changelog →](CHANGELOG.md)
 
 ---
@@ -126,11 +126,12 @@ charts. Optional agenda and closing are generated on import.
 
 ## Verified
 
-- Release pipeline test suite: **28 checks**, covering markdown parsing, layout selection, chart
-  parsing, image-source safety, and PPTX structure (slides, notes, chart part, real text).
+- Release pipeline test suite: **32 checks**, covering markdown parsing, layout selection, chart
+  parsing, deck-wide text replacement, image-source safety, and PPTX structure (slides, notes, chart
+  part, real text).
 - Generated sample deck audited with a presentation geometry checker: **8/8 pages, zero issues**.
-- Browser check: **19 checks** — add, undo, redo, build the print set, present with the timer and notes,
-  then download the speaker script, with no console errors.
+- Browser check: **24 checks** — rail search, find & replace with undo, add, undo, redo, build the
+  print set, present with the timer and notes, then download the speaker script, with no console errors.
 - Earlier browser proof: editing, theme switching, slide add/delete/reorder, notes persistence,
   library duplicate/delete, `.docx` import and PPTX export were exercised end to end.
 - Every release is built through an integrity gate: the packaged app must be byte-identical to
