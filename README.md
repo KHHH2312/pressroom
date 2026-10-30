@@ -18,7 +18,7 @@ shapes, charts, images and speaker notes, not pictures of slides.
 
 </div>
 
-> **New — 1.3** — download a plain-text speaker script for the whole deck.
+> **New — 1.4** — an elapsed timer in presenter view.
 > [Changelog →](CHANGELOG.md)
 
 ---
@@ -69,7 +69,7 @@ undo and redo, keyboard navigation, autosave to disk, and a library for every de
 
 ## Install
 
-1. Download **Pressroom-1.3.0-win32-x64.zip** from
+1. Download **Pressroom-1.4.0-win32-x64.zip** from
    [Releases](https://github.com/KHHH2312/pressroom/releases/latest).
 2. Verify it against `SHA256SUMS.txt` on the same release:
    ```powershell
@@ -89,7 +89,7 @@ undo and redo, keyboard navigation, autosave to disk, and a library for every de
 2. Pick layouts and a theme in **Design**. Add the brand colours and a logo if you have one.
 3. Edit text, bullets, charts or tables in **Content**; put what you will say in **Notes**.
 4. Press **Export .pptx**. The proof and the file share one geometry model.
-6. Press **Present** for a full-screen run with the arrow keys and N for notes.
+6. Press **Present** for a full-screen run with an elapsed timer, the arrow keys and N for notes.
 7. **Notes → Download script** writes every slide number, title and note as a .txt file.
 5. `Ctrl+S` saves now, `Ctrl+E` exports, `Ctrl+Z` undoes, `Ctrl+Shift+Z` or `Ctrl+Y` redoes, arrow
    keys move between slides, drag the rail to reorder.
@@ -129,7 +129,7 @@ charts. Optional agenda and closing are generated on import.
 - Release pipeline test suite: **25 checks**, covering markdown parsing, layout selection, chart
   parsing, image-source safety, and PPTX structure (slides, notes, chart part, real text).
 - Generated sample deck audited with a presentation geometry checker: **8/8 pages, zero issues**.
-- Browser check: **12 checks** — add, undo, redo, present with the arrow keys and notes, then download
+- Browser check: **13 checks** — add, undo, redo, present with the timer, notes and arrows, then download
   the speaker script, with no console errors.
 - Earlier browser proof: editing, theme switching, slide add/delete/reorder, notes persistence,
   library duplicate/delete, `.docx` import and PPTX export were exercised end to end.
