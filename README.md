@@ -165,3 +165,15 @@ documentation. The source is private.
 MIT — see [LICENSE](LICENSE). Third-party components in [THIRD-PARTY.md](THIRD-PARTY.md).
 “PowerPoint” is a trademark of Microsoft Corporation. Not affiliated with Microsoft, OpenAI or
 Anthropic.
+
+---
+
+## The rest of the desk
+
+Five local-first tools, one philosophy: your files, your machine, no telemetry.
+
+- **Pressroom** — [deck studio](https://github.com/KHHH2312/pressroom)
+- **Folio** — [PDF bindery](https://github.com/KHHH2312/folio)
+- **Relay** — [API client](https://github.com/KHHH2312/relay)
+- **Slate** — [markdown notebook](https://github.com/KHHH2312/slate)
+- **Boardroom** — [whiteboard](https://github.com/KHHH2312/boardroom)
