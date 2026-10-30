@@ -18,7 +18,7 @@ shapes, charts, images and speaker notes, not pictures of slides.
 
 </div>
 
-> **New — 1.6** — security: patched the transitive image sizer; audit clean.
+> **New — 1.7** — deck-wide fade, push and wipe transitions on export.
 > [Changelog →](CHANGELOG.md)
 
 ---
@@ -69,7 +69,7 @@ undo and redo, keyboard navigation, autosave to disk, and a library for every de
 
 ## Install
 
-1. Download **Pressroom-1.6.0-win32-x64.zip** from
+1. Download **Pressroom-1.7.0-win32-x64.zip** from
    [Releases](https://github.com/KHHH2312/pressroom/releases/latest).
 2. Verify it against `SHA256SUMS.txt` on the same release:
    ```powershell
@@ -126,10 +126,10 @@ charts. Optional agenda and closing are generated on import.
 
 ## Verified
 
-- Release pipeline test suite: **26 checks**, covering markdown parsing, layout selection, chart
+- Release pipeline test suite: **28 checks**, covering markdown parsing, layout selection, chart
   parsing, image-source safety, and PPTX structure (slides, notes, chart part, real text).
 - Generated sample deck audited with a presentation geometry checker: **8/8 pages, zero issues**.
-- Browser check: **14 checks** — add, undo, redo, build the print set, present with the timer and notes,
+- Browser check: **15 checks** — add, undo, redo, build the print set, present with the timer and notes,
   then download the speaker script, with no console errors.
 - Earlier browser proof: editing, theme switching, slide add/delete/reorder, notes persistence,
   library duplicate/delete, `.docx` import and PPTX export were exercised end to end.
