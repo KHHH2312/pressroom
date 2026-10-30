@@ -18,7 +18,7 @@ shapes, charts, images and speaker notes, not pictures of slides.
 
 </div>
 
-> **New — 1.13.0** — a live next-slide preview in presenter view, pull slides from another deck, and deck-wide find & replace.
+> **New — 1.14.0** — a blank screen in presenter view (B), a live next-slide preview, pull slides from another deck, and deck-wide find & replace.
 > [Changelog →](CHANGELOG.md)
 
 ---
@@ -48,6 +48,7 @@ undo and redo, keyboard navigation, autosave to disk, and a library for every de
 | **Native charts** | Bar, line, pie and donut from pasted CSV/TSV or JSON. PowerPoint charts, not screenshots. |
 | **Images that stay put** | PNG/JPEG/WebP upload, full-bleed cover crop, alt text and caption. Embedded, never fetched from a URL. |
 | **Speaker notes** | Per-slide notes editor; exported to the PowerPoint notes pane. |
+| **Presenter view** | Elapsed timer, speaker notes, a live next-slide preview and a blank screen — press B to black out the projection without leaving the podium. |
 | **Import** | Markdown/text pasted or dropped, `.md`/`.txt`, `.docx` text extraction. Optional agenda and closing. |
 | **Library** | Disk-backed decks, autosave, duplicate, delete. Nothing leaves the machine. |
 | **AI draft (optional)** | Use your own OpenAI/Anthropic key. The key stays in the app's browser storage; no key is stored on a server. |
@@ -69,7 +70,7 @@ undo and redo, keyboard navigation, autosave to disk, and a library for every de
 
 ## Install
 
-1. Download **Pressroom-1.9.0-win32-x64.zip** from
+1. Download **Pressroom-1.14.0-win32-x64.zip** from
    [Releases](https://github.com/KHHH2312/pressroom/releases/latest).
 2. Verify it against `SHA256SUMS.txt` on the same release:
    ```powershell
