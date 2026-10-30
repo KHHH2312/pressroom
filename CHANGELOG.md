@@ -1,10 +1,5 @@
 # Changelog
 
-## 1.7.0 — 2026-10-30
-
-- Deck-wide fade, push or wipe transitions written into every exported slide.
-- Suite grows to 28 checks; browser check to 15.
-
 ## 1.0.0 — 2026-10-30
 
 - First public release of Pressroom, a local-first deck studio for Windows.
