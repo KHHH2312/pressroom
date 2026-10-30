@@ -1,10 +1,5 @@
 # Changelog
 
-## 1.8.0 — 2026-10-30
-
-- Back up the whole deck library to one JSON file and restore it as fresh decks.
-- Browser check grows to 17.
-
 ## 1.0.0 — 2026-10-30
 
 - First public release of Pressroom, a local-first deck studio for Windows.
