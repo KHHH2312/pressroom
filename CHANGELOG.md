@@ -1,10 +1,5 @@
 # Changelog
 
-## 1.4.0 — 2026-10-30
-
-- Elapsed timer in presenter view, starting on open and stopping on exit.
-- Browser check grows to 13.
-
 ## 1.0.0 — 2026-10-30
 
 - First public release of Pressroom, a local-first deck studio for Windows.
