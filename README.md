@@ -18,8 +18,8 @@ shapes, charts, images and speaker notes, not pictures of slides.
 
 </div>
 
-> **New — 1.0** — native PPTX export · fourteen layouts · six themes · brand kit · native charts ·
-> speaker notes · deck library · optional BYO AI draft.
+> **New — 1.1** — toolbar undo/redo with a real redo stack (Ctrl+Z / Ctrl+Shift+Z / Ctrl+Y) and a
+> browser check that keeps the studio honest.
 > [Changelog →](CHANGELOG.md)
 
 ---
@@ -37,7 +37,7 @@ marks, folio numbers and the same geometry the PPTX writer uses. No export roule
 account and no model. Bring an OpenAI or Anthropic key only if you want a first draft.
 
 **It behaves like a studio, not a form.** Slide rail with drag reordering, duplicate/delete,
-undo, keyboard navigation, autosave to disk, and a library for every deck you make.
+undo and redo, keyboard navigation, autosave to disk, and a library for every deck you make.
 
 ## Features
 
@@ -69,7 +69,7 @@ undo, keyboard navigation, autosave to disk, and a library for every deck you ma
 
 ## Install
 
-1. Download **Pressroom-1.0.0-win32-x64.zip** from
+1. Download **Pressroom-1.1.0-win32-x64.zip** from
    [Releases](https://github.com/KHHH2312/pressroom/releases/latest).
 2. Verify it against `SHA256SUMS.txt` on the same release:
    ```powershell
@@ -89,8 +89,8 @@ undo, keyboard navigation, autosave to disk, and a library for every deck you ma
 2. Pick layouts and a theme in **Design**. Add the brand colours and a logo if you have one.
 3. Edit text, bullets, charts or tables in **Content**; put what you will say in **Notes**.
 4. Press **Export .pptx**. The proof and the file share one geometry model.
-5. `Ctrl+S` saves now, `Ctrl+E` exports, `Ctrl+Z` undoes, arrow keys move between slides, drag the
-   rail to reorder.
+5. `Ctrl+S` saves now, `Ctrl+E` exports, `Ctrl+Z` undoes, `Ctrl+Shift+Z` or `Ctrl+Y` redoes, arrow
+   keys move between slides, drag the rail to reorder.
 
 ### Markdown that becomes slides
 
@@ -127,8 +127,10 @@ charts. Optional agenda and closing are generated on import.
 - Release pipeline test suite: **25 checks**, covering markdown parsing, layout selection, chart
   parsing, image-source safety, and PPTX structure (slides, notes, chart part, real text).
 - Generated sample deck audited with a presentation geometry checker: **8/8 pages, zero issues**.
-- Browser proof: editing, theme switching, slide add/delete/reorder, notes persistence, library
-  duplicate/delete, `.docx` import and PPTX export were exercised end to end.
+- Browser check: **7 checks** — add a slide, undo, redo, and confirm a new edit clears the redo
+  stack, with no console errors.
+- Earlier browser proof: editing, theme switching, slide add/delete/reorder, notes persistence,
+  library duplicate/delete, `.docx` import and PPTX export were exercised end to end.
 - Every release is built through an integrity gate: the packaged app must be byte-identical to
   source, contain no stray scripts, and carry no private data before it can be published.
 - See [FILEMANIFEST.txt](FILEMANIFEST.txt) for the exact file list of the current archive.

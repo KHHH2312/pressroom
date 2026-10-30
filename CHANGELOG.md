@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.0 — 2026-10-30
+
+- Toolbar undo and redo with a real redo stack; Ctrl+Shift+Z and Ctrl+Y also redo.
+- A new browser check adds, undoes and redoes a slide, and caught a broken undo save path.
+
 ## 1.0.0 — 2026-10-30
 
 - First public release of Pressroom, a local-first deck studio for Windows.
