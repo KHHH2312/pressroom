@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.0 — 2026-10-30
+
+- Full-screen presenter view: real slide geometry, arrow/Home/End navigation, N for speaker notes, Esc to return.
+- Browser check grows to 11 checks.
+
 ## 1.0.0 — 2026-10-30
 
 - First public release of Pressroom, a local-first deck studio for Windows.

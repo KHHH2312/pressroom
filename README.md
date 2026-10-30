@@ -18,8 +18,7 @@ shapes, charts, images and speaker notes, not pictures of slides.
 
 </div>
 
-> **New — 1.1** — toolbar undo/redo with a real redo stack (Ctrl+Z / Ctrl+Shift+Z / Ctrl+Y) and a
-> browser check that keeps the studio honest.
+> **New — 1.2** — full-screen presenter view with speaker notes and arrow-key navigation.
 > [Changelog →](CHANGELOG.md)
 
 ---
@@ -59,6 +58,7 @@ undo and redo, keyboard navigation, autosave to disk, and a library for every de
 <img src="docs/design.png" alt="Theme and layout panel" width="49%">
 <img src="docs/library.png" alt="Deck library" width="49%">
 <img src="docs/import.png" alt="Import an outline" width="49%">
+<img src="docs/pressroom-present.png" alt="Presenter view" width="100%">
 </div>
 
 ## Requirements
@@ -69,7 +69,7 @@ undo and redo, keyboard navigation, autosave to disk, and a library for every de
 
 ## Install
 
-1. Download **Pressroom-1.1.0-win32-x64.zip** from
+1. Download **Pressroom-1.2.0-win32-x64.zip** from
    [Releases](https://github.com/KHHH2312/pressroom/releases/latest).
 2. Verify it against `SHA256SUMS.txt` on the same release:
    ```powershell
@@ -89,6 +89,7 @@ undo and redo, keyboard navigation, autosave to disk, and a library for every de
 2. Pick layouts and a theme in **Design**. Add the brand colours and a logo if you have one.
 3. Edit text, bullets, charts or tables in **Content**; put what you will say in **Notes**.
 4. Press **Export .pptx**. The proof and the file share one geometry model.
+6. Press **Present** for a full-screen run with the arrow keys and N for notes.
 5. `Ctrl+S` saves now, `Ctrl+E` exports, `Ctrl+Z` undoes, `Ctrl+Shift+Z` or `Ctrl+Y` redoes, arrow
    keys move between slides, drag the rail to reorder.
 
@@ -127,8 +128,8 @@ charts. Optional agenda and closing are generated on import.
 - Release pipeline test suite: **25 checks**, covering markdown parsing, layout selection, chart
   parsing, image-source safety, and PPTX structure (slides, notes, chart part, real text).
 - Generated sample deck audited with a presentation geometry checker: **8/8 pages, zero issues**.
-- Browser check: **7 checks** — add a slide, undo, redo, and confirm a new edit clears the redo
-  stack, with no console errors.
+- Browser check: **11 checks** — add, undo, redo, confirm a new edit clears redo, then open presenter
+  view, move with the arrow keys, toggle speaker notes and exit, with no console errors.
 - Earlier browser proof: editing, theme switching, slide add/delete/reorder, notes persistence,
   library duplicate/delete, `.docx` import and PPTX export were exercised end to end.
 - Every release is built through an integrity gate: the packaged app must be byte-identical to
