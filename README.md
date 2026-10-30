@@ -18,7 +18,7 @@ shapes, charts, images and speaker notes, not pictures of slides.
 
 </div>
 
-> **New — 1.12.0** — pull slides from another deck, deck-wide find & replace, and rail search that reads body, bullets and speaker notes.
+> **New — 1.13.0** — a live next-slide preview in presenter view, pull slides from another deck, and deck-wide find & replace.
 > [Changelog →](CHANGELOG.md)
 
 ---
@@ -130,7 +130,7 @@ charts. Optional agenda and closing are generated on import.
   parsing, deck-wide text replacement, image-source safety, and PPTX structure (slides, notes, chart
   part, real text).
 - Generated sample deck audited with a presentation geometry checker: **8/8 pages, zero issues**.
-- Browser check: **29 checks** — rail search, find & replace with undo, pull slides from another deck, add, undo, redo, build the
+- Browser check: **32 checks** — rail search, find & replace with undo, pull slides from another deck, add, undo, redo, build the
   print set, present with the timer and notes, then download the speaker script, with no console errors.
 - Earlier browser proof: editing, theme switching, slide add/delete/reorder, notes persistence,
   library duplicate/delete, `.docx` import and PPTX export were exercised end to end.
