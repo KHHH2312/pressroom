@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.9.0 — 2026-10-30
+
+- Filter proofs by title, kicker or subtitle in the rail; Escape clears.
+- Browser check grows to 19.
+
 ## 1.0.0 — 2026-10-30
 
 - First public release of Pressroom, a local-first deck studio for Windows.
