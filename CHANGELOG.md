@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.16.0 — 2026-11-01
+
+- Alt text now reaches the exported deck. The Alt text field on an image slide is written into the PPTX as the picture's description, falling back to the caption and then the slide title, and the brand logo is announced as `<deck title> logo`. Screen readers read what you typed.
+
 ## 1.15.0 — 2026-11-01
 
 - Presenter time limit: set a budget in minutes in the presenter bar; the timer turns amber at four fifths of it and red past the line. 0 means no limit.

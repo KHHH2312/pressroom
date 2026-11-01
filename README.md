@@ -18,7 +18,7 @@ shapes, charts, images and speaker notes, not pictures of slides.
 
 </div>
 
-> **New — 1.15.0** — a presenter time limit (amber at four fifths, red past the line), a blank screen in presenter view (B), a live next-slide preview, pull slides from another deck, and deck-wide find & replace.
+> **New — 1.16.0** — alt text you type now travels into the exported PPTX: every picture carries its description (falling back to the caption, then the slide title) and the brand logo is announced as a logo.
 > [Changelog →](CHANGELOG.md)
 
 ---
@@ -46,7 +46,7 @@ undo and redo, keyboard navigation, autosave to disk, and a library for every de
 | **Six themes** | Press, Nocturne, Ledger, Gallery, Field, Signal — paper/ink/accent systems with Windows-safe display and body families. |
 | **Brand kit** | Accent, ink and paper overrides, footer line and logo. The logo is placed on every slide in the proof and the export. |
 | **Native charts** | Bar, line, pie and donut from pasted CSV/TSV or JSON. PowerPoint charts, not screenshots. |
-| **Images that stay put** | PNG/JPEG/WebP upload, full-bleed cover crop, alt text and caption. Embedded, never fetched from a URL. |
+| **Images that stay put** | PNG/JPEG/WebP upload, full-bleed cover crop, alt text and caption. The alt text is written into the exported file as the picture's description, so a screen reader reads it. Embedded, never fetched from a URL. |
 | **Speaker notes** | Per-slide notes editor; exported to the PowerPoint notes pane. |
 | **Presenter view** | Elapsed timer with an optional time limit (amber at four fifths, red past it), speaker notes, a live next-slide preview and a blank screen — press B to black out the projection without leaving the podium. |
 | **Import** | Markdown/text pasted or dropped, `.md`/`.txt`, `.docx` text extraction. Optional agenda and closing. |
@@ -70,7 +70,7 @@ undo and redo, keyboard navigation, autosave to disk, and a library for every de
 
 ## Install
 
-1. Download **Pressroom-1.15.0-win32-x64.zip** from
+1. Download **Pressroom-1.16.0-win32-x64.zip** from
    [Releases](https://github.com/KHHH2312/pressroom/releases/latest).
 2. Verify it against `SHA256SUMS.txt` on the same release:
    ```powershell
@@ -127,11 +127,11 @@ charts. Optional agenda and closing are generated on import.
 
 ## Verified
 
-- Release pipeline test suite: **32 checks**, covering markdown parsing, layout selection, chart
+- Release pipeline test suite: **41 checks**, covering markdown parsing, layout selection, chart
   parsing, deck-wide text replacement, image-source safety, and PPTX structure (slides, notes, chart
   part, real text).
 - Generated sample deck audited with a presentation geometry checker: **8/8 pages, zero issues**.
-- Browser check: **32 checks** — rail search, find & replace with undo, pull slides from another deck, add, undo, redo, build the
+- Browser check: **38 checks** — rail search, find & replace with undo, pull slides from another deck, add, undo, redo, build the
   print set, present with the timer and notes, then download the speaker script, with no console errors.
 - Earlier browser proof: editing, theme switching, slide add/delete/reorder, notes persistence,
   library duplicate/delete, `.docx` import and PPTX export were exercised end to end.
