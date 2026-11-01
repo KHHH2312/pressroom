@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.15.0 — 2026-11-01
+
+- Presenter time limit: set a budget in minutes in the presenter bar; the timer turns amber at four fifths of it and red past the line. 0 means no limit.
+
 ## 1.14.0 — 2026-10-30
 
 - Presenter blank screen: B (or the Blank button) blacks out the projected slide without leaving presenter view; the next-slide preview and timer keep running.
